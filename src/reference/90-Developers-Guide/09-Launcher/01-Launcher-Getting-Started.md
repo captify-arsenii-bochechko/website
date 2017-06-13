@@ -187,6 +187,10 @@ Then, `publishLocal` or `+publishLocal` the application in sbt's shell to make i
 available. For more information, see
 [Launcher Configuration][Launcher-Configuration].
 
+#### Adding credentials to external library
+
+If the `sbt.boot.credentials` system property or the `SBT_CREDENTIALS` environment variable are pointing to credentials file - then that file gets parsed for a realm, hostname, username and password which is added to the CredentialsStore static instance.
+
 #### Running an Application
 
 As mentioned above, there are a few options to actually run the
